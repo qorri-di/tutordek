@@ -1,4 +1,4 @@
-package com.eksad.ddms.dto;
+package com.qodev.tech.dto;
 
 public class GeneralResponse {
     private String status;

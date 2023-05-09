@@ -1,4 +1,4 @@
-package com.eksad.ddms.dto.hello;
+package com.qodev.tech.dto.hello;
 
 public class HelloRequestDto {
 	private String gender;

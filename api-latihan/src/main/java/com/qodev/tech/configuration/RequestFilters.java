@@ -1,4 +1,4 @@
-package com.eksad.ddms.configuration;
+package com.qodev.tech.configuration;
 
 import io.quarkus.vertx.http.runtime.filters.Filters;
 import org.eclipse.microprofile.config.inject.ConfigProperty;

@@ -1,8 +1,8 @@
-package com.eksad.ddms.controller;
+package com.qodev.tech.controller;
 
-import com.eksad.ddms.dto.GeneralResponse;
-import com.eksad.ddms.dto.empSave.EmpSaveRequestDto;
-import com.eksad.ddms.service.EmployeeService;
+import com.qodev.tech.dto.GeneralResponse;
+import com.qodev.tech.dto.empSave.EmpSaveRequestDto;
+import com.qodev.tech.service.EmployeeService;
 import io.smallrye.common.annotation.Blocking;
 import io.vertx.core.json.JsonObject;
 
