@@ -1,8 +1,8 @@
-package com.eksad.ddms.controller;
+package com.qodev.tech.controller;
 
-import com.eksad.ddms.dto.GeneralResponse;
-import com.eksad.ddms.dto.hello.HelloRequestDto;
-import com.eksad.ddms.service.HelloService;
+import com.qodev.tech.dto.GeneralResponse;
+import com.qodev.tech.dto.hello.HelloRequestDto;
+import com.qodev.tech.service.HelloService;
 import io.vertx.core.json.JsonObject;
 
 import javax.inject.Inject;

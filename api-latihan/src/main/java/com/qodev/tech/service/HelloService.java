@@ -1,8 +1,8 @@
-package com.eksad.ddms.service;
+package com.qodev.tech.service;
 
-import com.eksad.ddms.dto.GeneralResponse;
-import com.eksad.ddms.dto.hello.HelloRequestDto;
-import com.eksad.ddms.dto.hello.HelloResponseDto;
+import com.qodev.tech.dto.GeneralResponse;
+import com.qodev.tech.dto.hello.HelloRequestDto;
+import com.qodev.tech.dto.hello.HelloResponseDto;
 
 import javax.inject.Singleton;
 

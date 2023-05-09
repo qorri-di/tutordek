@@ -1,9 +1,9 @@
-package com.eksad.ddms.service;
+package com.qodev.tech.service;
 
-import com.eksad.ddms.domain.MasterEmployee;
-import com.eksad.ddms.dto.GeneralResponse;
-import com.eksad.ddms.dto.empSave.EmpSaveRequestDto;
-import com.eksad.ddms.dto.empSave.EmpSaveResponseDto;
+import com.qodev.tech.domain.MasterEmployee;
+import com.qodev.tech.dto.GeneralResponse;
+import com.qodev.tech.dto.empSave.EmpSaveRequestDto;
+import com.qodev.tech.dto.empSave.EmpSaveResponseDto;
 import io.vertx.core.json.JsonObject;
 import org.jboss.logging.Logger;
 

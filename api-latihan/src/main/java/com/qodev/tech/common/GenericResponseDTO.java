@@ -1,4 +1,4 @@
-package com.eksad.ddms.common;
+package com.qodev.tech.common;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

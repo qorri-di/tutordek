@@ -1,4 +1,4 @@
-package com.eksad.ddms.common.helpers.logging;
+package com.qodev.tech.common.helpers.logging;
 
 public class LoggingRequestDto {
     private String appCode;

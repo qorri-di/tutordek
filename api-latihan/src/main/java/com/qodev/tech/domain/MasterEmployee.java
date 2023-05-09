@@ -1,4 +1,4 @@
-package com.eksad.ddms.domain;
+package com.qodev.tech.domain;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 

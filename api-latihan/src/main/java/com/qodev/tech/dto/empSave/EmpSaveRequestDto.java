@@ -1,4 +1,4 @@
-package com.eksad.ddms.dto.empSave;
+package com.qodev.tech.dto.empSave;
 
 public class EmpSaveRequestDto{
 	private Long empId;
