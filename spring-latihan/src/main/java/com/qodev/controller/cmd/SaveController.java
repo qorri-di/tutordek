@@ -1,8 +1,8 @@
 package com.qodev.controller.cmd;
 
-import com.eksad.ddms.order.dto.GeneralResponse;
-import com.eksad.ddms.order.dto.empSave.EmpSaveRequestDto;
-import com.eksad.ddms.order.service.EmployeeService;
+import com.qodev.dto.GeneralResponse;
+import com.qodev.dto.empSave.EmpSaveRequestDto;
+import com.qodev.service.EmployeeService;
 import io.vertx.core.json.JsonObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
