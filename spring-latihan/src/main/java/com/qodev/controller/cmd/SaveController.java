@@ -1,24 +1,23 @@
 package com.qodev.controller.cmd;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.qodev.dto.GeneralResponse;
-import com.qodev.dto.empSave.EmpSaveRequestDto;
-import com.qodev.service.EmployeeService;
+import com.qodev.dto.transaction.TrxRequest;
+import com.qodev.service.TransaksiService;
 import io.vertx.core.json.JsonObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
-@RequestMapping("/ddms/template/employee")
+@RequestMapping("/latihan/transaksi/stock")
 public class SaveController {
     @Autowired
-    EmployeeService employeeService;
+    TransaksiService trxService;
 
     @PostMapping("save")
-    public ResponseEntity helloPost(@RequestBody EmpSaveRequestDto request) {
-        GeneralResponse response=employeeService.employeeSaveService(request);
+    public ResponseEntity helloPost(@RequestBody TrxRequest request) throws JsonProcessingException {
+        GeneralResponse response= trxService.saveTransaksi(request);
         JsonObject jsonResponse= JsonObject.mapFrom(response);
 
         return new ResponseEntity(jsonResponse, HttpStatus.CREATED);
