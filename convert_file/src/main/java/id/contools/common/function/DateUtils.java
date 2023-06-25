@@ -1,4 +1,4 @@
-package id.saycode.common.helpers;
+package id.contools.common.function;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

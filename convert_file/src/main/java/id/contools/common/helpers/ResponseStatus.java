@@ -1,4 +1,4 @@
-package id.saycode.common;
+package id.contools.common.helpers;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package id.saycode.common;
+package id.contools.common.helpers;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -11,40 +11,22 @@ public class GenericResponseDTO<T> implements Serializable {
     private T data;
 
     @JsonIgnore
-    public GenericResponseDTO<T> successResponse() {
-        GenericResponseDTO<T> data = new GenericResponseDTO();
-        data.setStatus(ResponseStatus.S);
-        data.setCode(201);
-        data.setMessage("Process Successed");
-        return data;
-    }
-
-    @JsonIgnore
-    public GenericResponseDTO<T> successResponse(T t) {
+    public GenericResponseDTO<T> successResponse(T t, String message) {
         GenericResponseDTO<T> data = new GenericResponseDTO();
         data.setStatus(ResponseStatus.S);
         data.setCode(201);
         data.setData(t);
-        data.setMessage("Process Successed");
+        data.setMessage(message);
         return data;
     }
 
     @JsonIgnore
-    public GenericResponseDTO<T> noDataFoundResponse(T t) {
+    public GenericResponseDTO<T> noDataFoundResponse(T t, String message) {
         GenericResponseDTO<T> data = new GenericResponseDTO();
         data.setStatus(ResponseStatus.S);
         data.setCode(204);
         data.setData(t);
-        data.setMessage("No Data Found");
-        return data;
-    }
-
-    @JsonIgnore
-    public GenericResponseDTO<T> noDataFoundResponse() {
-        GenericResponseDTO<T> data = new GenericResponseDTO();
-        data.setStatus(ResponseStatus.S);
-        data.setCode(204);
-        data.setMessage("No Data Found");
+        data.setMessage(message);
         return data;
     }
 
